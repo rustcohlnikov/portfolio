@@ -1,5 +1,4 @@
 module.exports = {
-  buildDir: 'public',
   /*
   ** Headers of the page
   */
