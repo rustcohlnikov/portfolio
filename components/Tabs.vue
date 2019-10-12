@@ -39,24 +39,24 @@ export default {
 </script>
 
 <template>
-	<div class="wrapper">
-		<div class="content">
-			<slot :name="tabDetailsName" />
-		</div>
+  <div class="wrapper">
+    <div class="content">
+      <slot :name="tabDetailsName" />
+    </div>
 
     <ul class="switcher">
-				<li
-					v-for="(tab, index) in tabs"
-					:key="index"
-					:class="['tab', {'active': active === tab}]"
-					@click="selectTab(tab)"
-				>
-					<slot :name="tabSwitcherName(tab)">
-						{{ tab }}
-					</slot>
-				</li>
-		  </ul>
-	</div>
+      <li
+        v-for="(tab, index) in tabs"
+        :key="index"
+        :class="['tab', {'active': active === tab}]"
+        @click="selectTab(tab)"
+      >
+        <slot :name="tabSwitcherName(tab)">
+          {{ tab }}
+        </slot>
+      </li>
+    </ul>
+  </div>
 </template>
 
 <style lang="scss" scoped>
@@ -66,29 +66,20 @@ export default {
   justify-content: space-between;
   align-items: center;
   flex-direction: column;
-  padding-top: 20vh;
+  padding-top: 25vh;
 }
 .tab {
   color: $c-dark;
   cursor: pointer;
-  margin-right: 5rem;
+
+  &:not(:last-child) {
+    margin-right: 5rem;
+  }
 }
 
 .content {
-  width: 100%;
+  max-width: 400px;
   position: relative;
-  padding: 0 5rem;
-  margin-bottom: 5rem;
-
-  h2 {
-    font-size: 36px;
-    font-weight: bold;
-    margin-bottom: 2rem;
-  }
-
-  p {
-    max-width: 300px;
-  }
 
   & img {
     height: 240px;
@@ -99,12 +90,12 @@ export default {
 }
 
 .switcher {
+  width: 100%;
 	padding: 0;
   list-style: none;
 	display: flex;
   align-items: center;
 	justify-content: space-between;
-  max-width: 300px;
   margin-bottom: 3rem;
 }
 

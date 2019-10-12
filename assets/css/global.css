@@ -5,11 +5,27 @@ a {
   color: #1E1B2C;
 }
 
-/*
+h2 {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+
+.grid {
+  height: 100%;
+  display: grid;
+  grid-template-areas: "header header"
+                       "content column";
+  grid-template-columns: 5fr 1fr;
+  grid-template-rows: 1fr 5fr;
+}
+
 @font-face {
   font-family: 'TT Hoves';
-  src: url('/fonts/TT-Hoves-Regular.woff') format('woff'),
-    url('/fonts/TT-Hoves-Regular.ttf') format('truetype');
+  src: url('/fonts/TTHoves-Regular.woff2') format('woff2'),
+    url('/fonts/TTHoves-Regular.woff') format('woff'),
+    url('/fonts/TTHoves-Regular.ttf') format('truetype'),
+    url('/fonts/TTHoves-Regular.eot') format('opentype');
   font-style: normal;
   font-weight: 400;
   font-style: normal;
@@ -19,22 +35,13 @@ a {
 
 @font-face {
   font-family: 'TT Hoves';
-  src: url('/fonts/TT-Hoves-SemiBold.woff') format('woff'),
-    url('/fonts/TT-Hoves-SemiBold.ttf') format('truetype');
+  src: url('/fonts/TTHoves-SemiBold.woff2') format('woff2'),
+    url('/fonts/TTHoves-SemiBold.woff') format('woff'),
+    url('/fonts/TTHoves-SemiBold.ttf') format('truetype'),
+    url('/fonts/TTHoves-SemiBold.eot') format('opentype');
   font-style: normal;
   font-weight: 500;
   font-style: normal;
   text-rendering: optimizeLegibility;
   font-display: swap;
 }
-
-@font-face {
-  font-family: 'TT Hoves';
-  src: url('/fonts/TT-Hoves-Bold.woff') format('woff'),
-    url('/fonts/TT-Hoves-Bold.ttf') format('truetype');
-  font-style: normal;
-  font-weight: 700;
-  font-style: normal;
-  text-rendering: optimizeLegibility;
-  font-display: swap;
-}*/
