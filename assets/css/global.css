@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css?family=PT+Sans:400,700,900&display=swap');
+
+a {
+  text-decoration: underline;
+  color: #1E1B2C;
+}
+
+/*
+@font-face {
+  font-family: 'TT Hoves';
+  src: url('/fonts/TT-Hoves-Regular.woff') format('woff'),
+    url('/fonts/TT-Hoves-Regular.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 400;
+  font-style: normal;
+  text-rendering: optimizeLegibility;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'TT Hoves';
+  src: url('/fonts/TT-Hoves-SemiBold.woff') format('woff'),
+    url('/fonts/TT-Hoves-SemiBold.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 500;
+  font-style: normal;
+  text-rendering: optimizeLegibility;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'TT Hoves';
+  src: url('/fonts/TT-Hoves-Bold.woff') format('woff'),
+    url('/fonts/TT-Hoves-Bold.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 700;
+  font-style: normal;
+  text-rendering: optimizeLegibility;
+  font-display: swap;
+}*/
