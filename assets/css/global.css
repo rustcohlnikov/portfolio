@@ -20,12 +20,18 @@ h2 {
   grid-template-rows: 1fr 5fr;
 }
 
+@media (max-width: 991px) {
+  .grid {
+    grid-template-columns: 5fr 0fr;
+  }
+}
+
 @font-face {
-  font-family: 'TT Hoves';
-  src: url('/fonts/TTHoves-Regular.woff2') format('woff2'),
-    url('/fonts/TTHoves-Regular.woff') format('woff'),
-    url('/fonts/TTHoves-Regular.ttf') format('truetype'),
-    url('/fonts/TTHoves-Regular.eot') format('opentype');
+  font-family: 'RN';
+  src: url('/fonts/RN-Regular.woff2') format('woff2'),
+    url('/fonts/RN-Regular.woff') format('woff'),
+    url('/fonts/RN-Regular.ttf') format('truetype'),
+    url('/fonts/RN-Regular.eot') format('opentype');
   font-style: normal;
   font-weight: 400;
   font-style: normal;
@@ -34,11 +40,11 @@ h2 {
 }
 
 @font-face {
-  font-family: 'TT Hoves';
-  src: url('/fonts/TTHoves-SemiBold.woff2') format('woff2'),
-    url('/fonts/TTHoves-SemiBold.woff') format('woff'),
-    url('/fonts/TTHoves-SemiBold.ttf') format('truetype'),
-    url('/fonts/TTHoves-SemiBold.eot') format('opentype');
+  font-family: 'RN';
+  src: url('/fonts/RN-SemiBold.woff2') format('woff2'),
+    url('/fonts/RN-SemiBold.woff') format('woff'),
+    url('/fonts/RN-SemiBold.ttf') format('truetype'),
+    url('/fonts/RN-SemiBold.eot') format('opentype');
   font-style: normal;
   font-weight: 500;
   font-style: normal;

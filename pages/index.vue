@@ -15,9 +15,9 @@
         </h2>
         <div class="description">
           <p>
-            Frontend engineer from Almaty, Kazakhstan. <br >
+            Frontend Engineer from Almaty, Kazakhstan. <br >
             Currently based in Moscow, Russia. <br >
-            See my <nuxt-link to="portfolio">projects</nuxt-link>.
+            <!--See my <nuxt-link to="portfolio">projects</nuxt-link>.-->
           </p>
           <p>
             Also an occasional photographer, feminist and book lover.
@@ -26,25 +26,25 @@
       </div>
       <div class="about-social">
         <ul class="list">
-          <li><a 
-            target="_blank" 
-            href="https://github.com/rustcohlnikov"><img 
-              src="~/assets/img/github.svg" 
+          <li><a
+            target="_blank"
+            href="https://github.com/rustcohlnikov"><img
+              src="~/assets/img/github.svg"
               alt="github"></a></li>
-          <li><a 
-            target="_blank" 
-            href="https://www.instagram.com/relerin"><img 
-              src="~/assets/img/instagram.svg" 
+          <li><a
+            target="_blank"
+            href="https://www.instagram.com/relerin"><img
+              src="~/assets/img/instagram.svg"
               alt="instagram"></a></li>
-          <li><a 
-            target="_blank" 
-            href="https://linkedin.com/in/nazymjumadilova"><img 
-              src="~/assets/img/linkedin.svg" 
+          <li><a
+            target="_blank"
+            href="https://linkedin.com/in/nazymjumadilova"><img
+              src="~/assets/img/linkedin.svg"
               alt="linkedin"></a></li>
-          <li><a 
-            target="_blank" 
-            href="https://unsplash.com/@relerin"><img 
-              src="~/assets/img/unsplash.svg" 
+          <li><a
+            target="_blank"
+            href="https://unsplash.com/@relerin"><img
+              src="~/assets/img/unsplash.svg"
               alt="unsplash"></a></li>
         </ul>
       </div>
@@ -78,7 +78,6 @@ header {
   grid-area: header;
   border-bottom: 3px solid $c-dark;
   position: relative;
-  padding: 4rem 0;
   background-color: $c-accent;
 }
 
@@ -104,8 +103,14 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  flex-direction: column;
+  flex-flow: column;
+  padding: 0 2rem;
   padding-top: 25vh;
+
+  @include lg {
+    border: none;
+    padding-top: 20vh;
+  }
 
   &-text,
   &-social {
