@@ -15,10 +15,18 @@
         </h2>
         <div class="description">
           <p>
-            Frontend Engineer based in Moscow, Russia. <br >
-            I love everything about building user interfaces and web applications
-            and specialize in frontend security, responsive web, and performance.
-            See my <nuxt-link to="projects">projects</nuxt-link>.
+            Frontend Engineer with over 5 years experience in web development.
+            Based in Moscow, Russia. <br>
+            Current project —
+            <a
+              target="_blank"
+              href="https://invest.ozon.ru/">
+              Ozon.Invest
+            </a>.
+          </p>
+          <p>
+            I focus on responsive web design, frontend security and performance and strive to create
+            web applications that are aesthetically beautiful, fast, stable, and secure.
           </p>
           <p>
             Also an occasional photographer, feminist and book lover.
