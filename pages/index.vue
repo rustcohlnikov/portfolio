@@ -145,15 +145,28 @@ header {
     padding-top: 20vh;
   }
 
+  @include md {
+    padding-top: 2rem;
+  }
+
   &-text,
   &-social {
     width: 420px;
     height: 300px;
+
+    @include md {
+      width: 100%;
+      height: auto;
+    }
   }
 
   &-social {
     height: auto;
     margin-bottom: 3rem;
+
+    @include md {
+      margin-bottom: 1rem;
+    }
   }
 
   .title {

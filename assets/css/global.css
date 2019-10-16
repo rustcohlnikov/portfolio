@@ -22,6 +22,7 @@ h2 {
 
 @media (max-width: 991px) {
   .grid {
+    grid-template-rows: 1fr 10fr;
     grid-template-columns: 5fr 0fr;
   }
 }
