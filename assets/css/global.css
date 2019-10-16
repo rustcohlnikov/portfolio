@@ -42,10 +42,10 @@ h2 {
 
 @font-face {
   font-family: 'RN';
-  src: url('/fonts/RN-SemiBold.woff2') format('woff2'),
-    url('/fonts/RN-SemiBold.woff') format('woff'),
-    url('/fonts/RN-SemiBold.ttf') format('truetype'),
-    url('/fonts/RN-SemiBold.eot') format('opentype');
+  src: url('/fonts/RN-Semibold.woff2') format('woff2'),
+    url('/fonts/RN-Semibold.woff') format('woff'),
+    url('/fonts/RN-Semibold.ttf') format('truetype'),
+    url('/fonts/RN-Semibold.eot') format('opentype');
   font-style: normal;
   font-weight: 500;
   font-style: normal;
