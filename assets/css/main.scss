@@ -1,2 +1,52 @@
 @import './media.scss';
 @import './variables.scss';
+
+a {
+  text-decoration: none;
+  color: $c-dark;
+}
+
+.link {
+  position: relative;
+
+  &:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    background-color: $c-accent;
+    z-index: -10;
+    transition: all .1s linear;
+  }
+
+  &:hover {
+    cursor: pointer;
+    &:after {
+      height: 0;
+    }
+  }
+}
+
+h2 {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+
+.grid {
+  height: 100%;
+  display: grid;
+  grid-template-areas: "header header"
+                       "content column";
+  grid-template-columns: 5fr 1fr;
+  grid-template-rows: 1fr 5fr;
+}
+
+@media (max-width: 991px) {
+  .grid {
+    grid-template-rows: 1fr 10fr;
+    grid-template-columns: 5fr 0fr;
+  }
+}

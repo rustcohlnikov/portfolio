@@ -15,14 +15,12 @@
         </h2>
         <div class="description">
           <p>
-            Frontend Engineer with over 5 years experience in web development.
-            Based in Moscow, Russia. <br>
-            Current project —
+            Frontend engineer with over five years experience in web development.
+            Currently —
             <a
+              class="link"
               target="_blank"
-              href="https://invest.ozon.ru/">
-              Ozon.Invest
-            </a>.
+              href="https://invest.ozon.ru/">Ozon.Invest</a> (Moscow, Russia).
           </p>
           <p>
             I focus on responsive web design, frontend security and performance and strive to create
@@ -138,7 +136,6 @@ header {
   flex-flow: column;
   padding: 0 2rem;
   padding-top: 20vh;
-  text-transform: lowercase;
 
   @include lg {
     border: none;
@@ -169,10 +166,6 @@ header {
     }
   }
 
-  .title {
-    color: $c-accent;
-  }
-
   .description {
     p {
       padding: 0;
@@ -199,6 +192,7 @@ header {
 
     svg {
       fill: $c-dark;
+      transition: all .1s linear;
 
       &:hover {
         fill: $c-accent;

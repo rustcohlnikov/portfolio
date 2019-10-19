@@ -1,31 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=PT+Sans:400,700,900&display=swap');
 
-a {
-  text-decoration: underline;
-  color: #1E1B2C;
-}
-
-h2 {
-  font-size: 36px;
-  font-weight: bold;
-  margin-bottom: 2rem;
-}
-
-.grid {
-  height: 100%;
-  display: grid;
-  grid-template-areas: "header header"
-                       "content column";
-  grid-template-columns: 5fr 1fr;
-  grid-template-rows: 1fr 5fr;
-}
-
-@media (max-width: 991px) {
-  .grid {
-    grid-template-rows: 1fr 10fr;
-    grid-template-columns: 5fr 0fr;
-  }
-}
 
 @font-face {
   font-family: 'RN';
