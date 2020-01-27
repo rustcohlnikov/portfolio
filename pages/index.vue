@@ -15,7 +15,7 @@
         </h2>
         <div class="description">
           <p>
-            Frontend engineer with over five years experience in web development.
+            Frontend Engineer with 5+ years experience in web development.
             Currently —
             <a
               class="link"
@@ -27,7 +27,7 @@
             web applications that are aesthetically beautiful, fast, stable, and secure.
           </p>
           <p>
-            Also an occasional photographer, feminist and book lover.
+            Also I am a feminist, an occasional photographer and book lover.
           </p>
         </div>
       </div>
