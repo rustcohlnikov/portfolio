@@ -3,7 +3,7 @@ module.exports = {
   ** Headers of the page
   */
   head: {
-    title: 'another frontend engineer',
+    title: 'Nazym Jumadilova | Frontend Engineer',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -20,7 +20,7 @@ module.exports = {
   /*
   ** Customize the progress bar color
   */
-  loading: { color: '#F66361' },
+  loading: { color: '#f7ba63' },
   /*
   ** Build configuration
   */

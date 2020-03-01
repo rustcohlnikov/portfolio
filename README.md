@@ -1,3 +1,3 @@
 # relerin
 
-> A personal website 
+> A personal website based on Nuxt

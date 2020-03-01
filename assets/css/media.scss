@@ -5,30 +5,30 @@ $xl-width: 1200px;
 
 @mixin xs {
 	@media (max-width: #{$sm-width}) {
-	  @content;
+		@content;
 	}
 }
 
 @mixin sm {
-  @media (max-width: #{$md-width}) {
-    @content;
-  }
+	@media (max-width: #{$md-width}) {
+		@content;
+	}
 }
 
 @mixin md {
-  @media (max-width: #{$lg-width}) {
-    @content;
-  }
+	@media (max-width: #{$lg-width}) {
+		@content;
+	}
 }
 
 @mixin lg {
 	@media (max-width: #{$xl-width}) {
-	  @content;
+		@content;
 	}
-  }
+}
 
 @mixin xl {
-  @media (min-width: #{$xl-width + 1}) {
-    @content;
-  }
+	@media (min-width: #{$xl-width + 1}) {
+		@content;
+	}
 }
