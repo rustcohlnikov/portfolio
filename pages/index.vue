@@ -2,7 +2,7 @@
   <div class="grid">
     <header />
     <main class="about">
-      <div class="about-text">
+      <div class="text">
         <h2 class="title">
           Hello!
         </h2>
@@ -100,24 +100,24 @@ header {
     @include md {
         padding-top: 2rem;
     }
+}
 
-    &-text {
-        width: 420px;
-        height: 300px;
+.text {
+	width: 420px;
+	height: 300px;
 
-        @include md {
-            width: 100%;
-            height: auto;
-        }
-    }
+	@include md {
+		width: 100%;
+		height: auto;
+	}
+}
 
-    .description {
-        p {
-            padding: 0;
-            margin: 0;
-            margin-bottom: 1rem;
-        }
-    }
+.description {
+	p {
+		padding: 0;
+		margin: 0;
+		margin-bottom: 1rem;
+	}
 }
 
 .column {
