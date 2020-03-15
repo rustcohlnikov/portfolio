@@ -14,6 +14,7 @@
             <a
               class="link"
               target="_blank"
+              rel="noopener"
               href="https://invest.ozon.ru/"
             >Ozon.Invest</a> (Moscow, Russia).
           </p>
@@ -41,18 +42,22 @@ export default {
         return {
             socialLinks: [
                 {
+					name: 'github',
                     icon: require("~/assets/img/github.svg"),
                     href: "https://github.com/rustcohlnikov"
                 },
                 {
+					name: 'linkedin',
                     icon: require("~/assets/img/linkedin.svg"),
                     href: "https://linkedin.com/in/nazymjumadilova"
                 },
                 {
+					name: 'instagram',
                     icon: require("~/assets/img/instagram.svg"),
                     href: "https://www.instagram.com/relerin"
                 },
                 {
+					name: 'unsplash',
                     icon: require("~/assets/img/unsplash.svg"),
                     href: "https://unsplash.com/@relerin"
                 }

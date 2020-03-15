@@ -12,7 +12,11 @@
           rel="noopener"
           class="list__link"
         >
-          <img :src="link.icon">
+          {{ link.name }}
+          <img
+            :src="link.icon"
+            :alt="link.name"
+          >
         </a>
       </li>
     </ul>
@@ -54,6 +58,9 @@ export default {
     }
 
     &__link {
+		line-height: 0;
+		font-size: 0;
+		color: transparent;
         text-decoration: none;
         color: inherit;
     }
