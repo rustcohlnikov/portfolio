@@ -4,12 +4,12 @@
     <main class="about">
       <div class="text">
         <h2 class="title">
-          Hello!
+          Hello! 👋🏻
         </h2>
         <div class="description">
           <p>My name is Nazym Jumadilova.</p>
           <p>
-            I'm a Senior Frontend Engineer with 5.5+ years of professional experience in web development. <br>
+            I'm a Frontend Engineer with {{ yearsOfExperience }} years of experience in web development.
             Currently —
             <a
               class="link"
@@ -31,6 +31,7 @@
 </template>
 
 <script>
+import {differenceInMonths} from 'date-fns';
 import LinkList from "../components/LinkList";
 
 export default {
@@ -42,35 +43,46 @@ export default {
         return {
             socialLinks: [
                 {
-					name: 'github',
+                    name: "github",
                     icon: require("~/assets/img/github.svg"),
                     href: "https://github.com/rustcohlnikov"
                 },
                 {
-					name: 'linkedin',
+                    name: "linkedin",
                     icon: require("~/assets/img/linkedin.svg"),
                     href: "https://linkedin.com/in/nazymjumadilova"
                 },
                 {
-					name: 'instagram',
+                    name: "instagram",
                     icon: require("~/assets/img/instagram.svg"),
                     href: "https://www.instagram.com/relerin"
                 },
                 {
-					name: 'unsplash',
+                    name: "unsplash",
                     icon: require("~/assets/img/unsplash.svg"),
                     href: "https://unsplash.com/@relerin"
                 }
-            ]
+			],
         };
-    }
+	},
+
+	computed: {
+		yearsOfExperience() {
+			const monthsInYear = 12;
+			const careerStartDate = new Date(2014, 8, 1, 0, 0, 0);
+			const now = new Date();
+			const monthsDiff = differenceInMonths(now, careerStartDate);
+
+			return Math.floor(monthsDiff / monthsInYear);
+		}
+	},
 };
 </script>
 
 <style lang="scss" scoped>
 header {
     grid-area: header;
-    border-bottom: 3px solid $c-accent;
+	border-bottom: 3px solid $c-accent;
     position: relative;
 }
 
@@ -79,7 +91,7 @@ header {
 }
 
 .title {
-	margin-bottom: 1.5rem;
+    margin-bottom: 1.5rem;
 }
 
 .about {

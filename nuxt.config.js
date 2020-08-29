@@ -1,7 +1,4 @@
 module.exports = {
-  /*
-  ** Headers of the page
-  */
   head: {
 	title: 'Nazym Jumadilova | Frontend Engineer',
 	htmlAttrs: {
@@ -20,20 +17,15 @@ module.exports = {
     '~assets/css/global.css',
     '~assets/css/variables.scss',
   ],
-  /*
-  ** Customize the progress bar color
-  */
+  modules: [
+	'@nuxtjs/style-resources',
+  ],
+  styleResources: {
+	scss: './assets/css/main.scss',
+  },
   loading: { color: '#f7ba63' },
-  /*
-  ** Build configuration
-  */
   build: {
-    styleResources: {
-      scss: './assets/css/main.scss',
-    },
-    /*
-    ** Run ESLint on save
-    */
+	vendor: ['pts'],
     extend (config, { isDev, isClient }) {
       if (isDev && isClient) {
         config.module.rules.push({
