@@ -15,8 +15,8 @@
               class="link"
               target="_blank"
               rel="noopener"
-              href="https://invest.ozon.ru/"
-            >Ozon.Invest</a> (Moscow, Russia).
+              href="https://www.deliveryhero.com/"
+            >Delivery Hero</a> (Berlin, Germany).
           </p>
           <p>
             I focus on responsive web design, frontend security and performance and strive to create
