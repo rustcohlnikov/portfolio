@@ -3,7 +3,9 @@
     <header />
     <main class="about">
       <div class="text">
-        <h2 class="title">Hello! 👋🏻</h2>
+        <h2 class="title">
+          Hello! 👋🏻
+        </h2>
         <div class="description">
           <p>My name is Nazym Jumadilova.</p>
           <p>
@@ -14,8 +16,7 @@
               target="_blank"
               rel="noopener"
               href="https://www.deliveryhero.com/"
-              >Delivery Hero</a
-            >
+            >Delivery Hero</a>
             (Berlin, Germany).
           </p>
           <p>
