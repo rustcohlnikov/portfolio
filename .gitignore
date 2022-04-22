@@ -1,8 +1,11 @@
+.DS_Store
+
 # dependencies
 node_modules
 
 # logs
 npm-debug.log
+*.log
 
 # Nuxt build
 .nuxt
@@ -11,3 +14,4 @@ npm-debug.log
 dist
 public
 pages/projects.vue
+.vercel
