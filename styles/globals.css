@@ -1,0 +1,39 @@
+:root {
+  --dark-text: #383838;
+  --dark-border: #383838;
+  --light-text: #fff;
+  --light-border: #fff;
+}
+
+#__next {
+  height: 100%;
+  width: 100%;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.25;
+  font-family: Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  background: #f4f4f4;
+  background-image: radial-gradient(rgb(221, 221, 221) 1px, transparent 0);
+  background-size: 20px 20px;
+  background-position: -19px -19px;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
