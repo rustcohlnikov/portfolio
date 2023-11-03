@@ -2,61 +2,40 @@
 import { SocialLink } from '@type'
 import type { NextPage } from 'next'
 import Head from 'next/head'
-import Image from 'next/image'
 import Social from '../components/SocialLinks'
 import Header from '../components/Header'
 import pageStyles from '../styles/Page.module.css'
 import styles from '../styles/Home.module.css'
 import { SOCIAL_LINKS } from '../constants'
-import background from '../public/bg2.webp'
 
 const Home: NextPage = () => {
   return (
-    <div className={pageStyles.container}>
+    <div className={pageStyles.grid}>
       <Head>
-        <title>Nazym Jumadilova | Frontend and Photography</title>
+        <title>RL/RN</title>
         <meta name="description" content="Nazym Jumadilova | Frontend and Photography" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <div className={styles.background}>
-        <Image
-          alt="hand touching pink flowers"
-          src={background}
-          layout="fill"
-          objectFit="cover"
-          placeholder="blur"
-          quality={100}
-          priority
-        />
-      </div>
-
-      <div className="container">
-        <div className={styles.vertical} />
-      </div>
-
       <Header />
 
-      <main className={pageStyles.main}>
-        <div className={styles.content}>
-          <div className="row">
-            <div className="col-2 col-md-4"><Social links={SOCIAL_LINKS} /></div>
-            <div className="col-6 col-md-4" />
-            <div className="col-4 col-md-4">
-              <div className={styles.titleContainer}>
-                <div className={styles.titleWrapper}>
-                  <span className={styles.subtitle}>Software Engineer and Photographer</span>
-                  <h1 className={styles.title}>
-                    Nazym Jumadilova
-                  </h1>
-                </div>
-              </div>
+      <main className={pageStyles.about}>
+        <div className={pageStyles.text}>
+          <h1 className={pageStyles.title}>
+            Hello ☀️
+          </h1>
+          <div className={pageStyles.description}>
+            <p>
+              I'm Nazym, <br /> a Senior Frontend Engineer at <a className={pageStyles.link} href="https://www.deliveryhero.com" target='_blank' rel='noopener'>Delivery Hero</a> (Berlin, Germany).
+            </p>
+            <p>I strive to create web applications that are aesthetically beautiful, fast, stable, and secure. </p>
 
-            </div>
           </div>
+          <Social links={SOCIAL_LINKS} />
         </div>
 
       </main>
+      <footer className={pageStyles.footer} />
     </div>
   )
 }
