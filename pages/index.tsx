@@ -1,10 +1,10 @@
 
-import type { NextPage } from 'next'
-import Head from 'next/head'
-import Social from '../components/SocialLinks'
-import Header from '../components/Header'
-import pageStyles from '../styles/Page.module.css'
-import { SOCIAL_LINKS } from '../constants'
+import type { NextPage } from "next";
+import Head from "next/head";
+import Social from "../components/SocialLinks";
+import Header from "../components/Header";
+import pageStyles from "../styles/Page.module.css";
+import { SOCIAL_LINKS } from "../constants";
 
 const Home: NextPage = () => {
   return (
@@ -35,7 +35,7 @@ const Home: NextPage = () => {
       </main>
       <footer className={pageStyles.footer} />
     </div>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;

@@ -1,2 +1,2 @@
-export * from './Header'
-export * from './SocialLinks'
+export * from "./Header";
+export * from "./SocialLinks";

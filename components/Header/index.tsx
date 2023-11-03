@@ -1,8 +1,8 @@
-import React, { FC } from 'react'
-import Link from 'next/link'
-import pageStyles from '../../styles/Page.module.css'
-import listStyles from '../../styles/List.module.css'
-import styles from '../../styles/Header.module.css'
+import React, { FC } from "react";
+import Link from "next/link";
+import pageStyles from "../../styles/Page.module.css";
+import listStyles from "../../styles/List.module.css";
+import styles from "../../styles/Header.module.css";
 
 interface Props {
   dark?: boolean;
@@ -22,8 +22,8 @@ const Header: FC<Props> = ({ dark = true }) => {
       </div>
 
     </header>
-  )
-}
+  );
+};
 
 
-export default Header
+export default Header;
