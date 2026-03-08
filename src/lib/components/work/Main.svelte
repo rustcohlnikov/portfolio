@@ -1,38 +1,36 @@
 <script>
-	import Links from '../shared/Links.svelte';
 	import Stack from '../shared/Stack.svelte';
 	import Cursor from './Cursor.svelte';
-
-	let links = [
-		{ label: 'Github', href: 'https://github.com/rustcohlnikov' },
-		{ label: 'Linkedin', href: 'https://linkedin.com/in/nazymjumadilova' }
-	];
 </script>
 
 <main>
 	<Stack align="baseline" gap="0.6rem">
-		<h1>Hallo</h1>
+		<h1><span class="symbol">&gt;</span>Hallo</h1>
 		<Cursor />
 	</Stack>
 	<section>
 		<p>
-			Currently, I'm building interfaces at
-			<a href="https://kraken.tech/" target="_blank">Kraken</a>.
+			I've been building for the web since 2014: started with jQuery and Angular, and had some great
+			time working with Vue.js.
 		</p>
-		<p>I've been writing frontend code since 2014: started with jQuery and Angular 1, and had some great time with Vue.js.</p>
-		<p>Today I work with React, TypeScript, Next.js, Jest, and Playwright.</p>
+		<p>
+			Currently at
+			<a href="https://kraken.tech/" target="_blank">Kraken</a> with React, TypeScript, Next.js, Jest,
+			and Playwright.
+		</p>
+		<p>Based in Berlin.</p>
 	</section>
-
-	<Links {links} />
 </main>
 
 <style>
-	section {
-		margin-bottom: 1.5rem;
+	.symbol {
+		color: var(--accent);
+		margin-right: 1rem;
 	}
 
 	p {
-		margin-bottom: 1rem;
+		margin-bottom: 1.5rem;
+		color: var(--text);
 	}
 
 	h1 {
@@ -40,5 +38,6 @@
 		font-size: 3rem;
 		line-height: 1;
 		margin-bottom: 3rem;
+		color: var(--text);
 	}
 </style>

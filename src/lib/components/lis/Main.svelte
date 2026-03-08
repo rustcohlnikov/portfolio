@@ -9,11 +9,11 @@
 <main>
 	<h1>Hallo!</h1>
 	<section>
+		<p>I'm Nazym and this is my corner of the Internet.</p>
 		<p>
-			I'm Nazym and this is my corner of the Internet.
+			When I'm not at a computer, I photograph my life on film, cycle around Berlin, and
+			occasionally bake pretty good scones.
 		</p>
-    <p>When I'm not at a computer, I photograph my life on film, cycle around Berlin, and
-			occasionally bake pretty good scones.</p>
 	</section>
 
 	<Links {links} />
@@ -27,12 +27,14 @@
 
 	p {
 		margin-bottom: 1rem;
+		color: var(--text);
 	}
 
 	h1 {
 		font-family: 'Reenie Beanie', cursive;
 		font-size: 4rem;
 		line-height: 1;
+		color: var(--text);
 		margin-bottom: 1rem;
 	}
 </style>

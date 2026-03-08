@@ -10,16 +10,16 @@
 </script>
 
 <button onclick={toggle}>
-	{isWork ? '→ life' : '→ work'}
+	{isWork ? 'life' : 'work'} →
 </button>
 
 <style>
 	button {
 		background: none;
 		border: none;
-		color: var(--text-secondary);
+		color: var(--accent);
 		font-family: inherit;
-		font-size: 1rem;
+		font-size: 1.5rem;
 		cursor: pointer;
 		padding: 0;
 		transition: color 0.15s;

@@ -1,6 +1,6 @@
 <script>
 	import Scanlines from '$lib/components/work/Scanlines.svelte';
-	import Footer from '$lib/components/shared/Footer.svelte';
+	import Footer from '$lib/components/work/Footer.svelte';
 	import Main from '$lib/components/work/Main.svelte';
 </script>
 
@@ -8,7 +8,6 @@
 	<div class="content">
 		<Scanlines />
 		<Main />
-		
 	</div>
 	<Footer />
 </div>

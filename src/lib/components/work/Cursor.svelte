@@ -2,7 +2,7 @@
 
 <style>
 	.cursor {
-		font-family: "Press Start 2P", monospace;
+		font-family: 'Press Start 2P', monospace;
 		font-size: 3rem;
 		display: inline-block;
 		animation: colorshift 1s steps(1) infinite;

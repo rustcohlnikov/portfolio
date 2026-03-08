@@ -16,10 +16,20 @@
 				<Polaroid src="/img/celine.webp" caption="Celine, 2023" rotate={-3} textAlign="center" />
 			</div>
 			<div class="photo two">
-				<Polaroid src="/img/bike.webp" caption="Trip to Bad Saarow, 2025" rotate={10} textAlign="center" />
+				<Polaroid
+					src="/img/bike.webp"
+					caption="Trip to Bad Saarow, 2025"
+					rotate={10}
+					textAlign="center"
+				/>
 			</div>
 			<div class="photo three">
-				<Polaroid src="/img/hand.webp" caption="Summer with Janelle, 2014" rotate={-10} textAlign="center" />
+				<Polaroid
+					src="/img/hand.webp"
+					caption="Summer with Janelle, 2014"
+					rotate={-10}
+					textAlign="center"
+				/>
 			</div>
 		</aside>
 	</div>
@@ -42,9 +52,9 @@
 		align-items: center;
 	}
 
-  .main {
-    width: 30vw;
-  }
+	.main {
+		width: 30vw;
+	}
 
 	aside {
 		position: relative;
@@ -74,20 +84,24 @@
 		top: calc(50% - 100px);
 	}
 
-  @media (max-width: 900px) {
-    .main,
-    aside {
+	@media (max-width: 900px) {
+		.main,
+		aside {
 			width: 50vw;
 		}
-  }
+	}
 
 	@media (max-width: 500px) {
+		.page {
+			padding: 4rem 2rem;
+		}
+
 		.content {
 			grid-template-columns: 1fr;
 		}
 
 		.main,
-    aside {
+		aside {
 			width: initial;
 		}
 
