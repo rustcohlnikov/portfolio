@@ -1,10 +1,10 @@
 :root, [data-theme="dark"] {
   --bg: #00080f;
---accent: #00b4ff;
---accent-dark: #006a99;
---text: #e8f4ff;
---text-secondary: #3a7a9a;
---border: #002030;
+  --accent: #00b4ff;
+  --accent-dark: #006a99;
+  --text: #e8f4ff;
+  --text-secondary: #3a7a9a;
+  --border: #002030;
 }
 
 [data-theme="light"] {
@@ -30,7 +30,7 @@ html {
   background-color: var(--bg);
   color: var(--text);
   transition: background-color 0.2s, color 0.2s;
-  cursor: crosshair
+  cursor: crosshair;
 }
 
 html, body {
