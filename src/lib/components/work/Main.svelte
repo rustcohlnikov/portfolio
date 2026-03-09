@@ -28,6 +28,10 @@
 		margin-right: 1rem;
 	}
 
+	main {
+		text-wrap: balance;
+	}
+
 	p {
 		margin-bottom: 1.5rem;
 		color: var(--text);
@@ -35,7 +39,7 @@
 
 	h1 {
 		font-family: 'Press Start 2P', monospace;
-		font-size: 3rem;
+		font-size: 2rem;
 		line-height: 1;
 		margin-bottom: 3rem;
 		color: var(--text);

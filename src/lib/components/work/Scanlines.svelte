@@ -7,9 +7,9 @@
 		background: repeating-linear-gradient(
 			to bottom,
 			transparent,
-			transparent 3px,
-			rgba(255, 255, 255, 0.05) 3px,
-			rgba(255, 255, 255, 0.05) 4px
+			transparent 6px,
+			rgba(255, 255, 255, 0.03) 6px,
+			rgba(255, 255, 255, 0.03) 8px
 		);
 		pointer-events: none;
 		z-index: 9999;

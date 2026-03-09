@@ -25,6 +25,10 @@
 		color: var(--text);
 	}
 
+  main {
+    text-wrap: balance;
+  }
+
 	p {
 		margin-bottom: 1rem;
 		color: var(--text);
